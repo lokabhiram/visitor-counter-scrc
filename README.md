@@ -32,6 +32,16 @@ This project is a simple visitor counter web application built using Python.
     ```
 
 2. Visit [http://127.0.0.1:5000/visitor_count](http://127.0.0.1:5000/visitor_count) in your web browser to see the output.
+3. Additionally, to display the visitor count on a MAX7219 LED display module connected to an ESP32 microcontroller:
+   
+   - Connect the MAX7219 module to your ESP32 as follows:
+     - VCC to ESP32 5V or 3.3V (based on your module's requirements)
+     - GND to ESP32 GND
+     - DIN to ESP32 pin 15
+     - CS to ESP32 pin 2
+     - CLK to ESP32 pin 4
+   
+   Ensure that the ESP32 is powered properly and both devices share a common ground.
 
 ## Contributors
 

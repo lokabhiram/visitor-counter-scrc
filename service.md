@@ -16,12 +16,16 @@ Description=Visitor Counter Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/main.py
+ExecStart=/usr/bin/python3 /home/pi/visitor-counter/main.py
+WorkingDirectory=/home/pi/visitor-counter
+StandardOutput=inherit
+StandardError=inherit
 Restart=always
 User=pi
 
 [Install]
 WantedBy=multi-user.target
+
 ```
 
 Replace `/path/to/main.py` with the actual path to your `main.py` file.

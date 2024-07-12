@@ -14,7 +14,7 @@ This project is a simple visitor counter web application built using Python.
 3. Navigate to the project directory:
 
     ```bash
-    cd visitor-counter-scrc
+    cd visitor-counter
     ```
 
 4. Install dependencies using pip:
